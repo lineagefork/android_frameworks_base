@@ -3554,6 +3554,23 @@ public final class Settings {
          * instead
          * @hide
          */
+
+        /**
+         * show clear all recents button
+         * @hide
+         */
+        public static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
+
+        /**
+         * location of the clear all rectents button
+         * @hide
+         */
+        public static final String  RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+
+        /**
+         * show lockscreen clock
+         *  @hide
+         */
         @Deprecated
         public static final String DESK_UNDOCK_SOUND = Global.DESK_UNDOCK_SOUND;
 
