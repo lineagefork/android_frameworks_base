@@ -526,8 +526,6 @@
     <!-- ====================================================================== -->
     <eat-comment />
 
-    <protected-broadcast android:name="masquerade.substratum.STATUS_CHANGED" />
-
     <!-- ====================================================================== -->
     <!-- Permissions for accessing user's contacts including personal profile   -->
     <!-- ====================================================================== -->
