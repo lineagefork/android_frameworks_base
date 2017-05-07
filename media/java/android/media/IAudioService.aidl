@@ -60,8 +60,6 @@ interface IAudioService {
 
     int getStreamMaxVolume(int streamType);
 
-    void setStreamMaxVolume(int streamType, int maxVol);
-
     int getLastAudibleStreamVolume(int streamType);
 
     void setMicrophoneMute(boolean on, String callingPackage, int userId);
