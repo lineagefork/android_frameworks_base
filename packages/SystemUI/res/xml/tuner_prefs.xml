@@ -68,10 +68,6 @@
             android:key="wifi"
             android:title="@string/quick_settings_wifi_label" />
 
-	<com.android.systemui.tuner.StatusBarSwitch
-            android:key="volte"
-            android:title="@string/status_bar_volte" />
-
         <com.android.systemui.tuner.StatusBarSwitch
             android:key="ethernet"
             android:title="@string/status_bar_ethernet" />
@@ -83,6 +79,12 @@
         <com.android.systemui.tuner.StatusBarSwitch
             android:key="airplane"
             android:title="@string/status_bar_airplane" />
+
+        <!-- VoLTE -->
+
+        <com.android.systemui.tuner.StatusBarSwitch 
+            android:key="volte"
+            android:title="@string/status_bar_volte" />
 
         <!-- other weird signal stuff -->
 

@@ -288,9 +288,9 @@ public class SignalClusterView
         state.mMobileTypeId = statusType;
         state.mMobileDescription = statusIcon.contentDescription;
         state.mMobileTypeDescription = typeContentDescription;
+        mMobileIms = isMobileIms;
         state.mIsMobileTypeIconWide = statusType != 0 && isWide;
         state.mRoaming = roaming;
-        mMobileIms = isMobileIms;
 
         apply();
     }
@@ -298,6 +298,7 @@ public class SignalClusterView
     @Override
     public void setEthernetIndicators(IconState state) {
         mEthernetVisible = state.visible && !mBlockEthernet;
+
         mEthernetIconId = state.icon;
         mEthernetDescription = state.contentDescription;
 
@@ -515,7 +516,6 @@ public class SignalClusterView
         } else {
             mAirplane.setVisibility(View.GONE);
         }
-
         if (mMobileIms && !mBlockVolte){
             mMobileImsImageView.setVisibility(View.VISIBLE);
         } else {
