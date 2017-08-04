@@ -33,7 +33,7 @@ import com.android.systemui.R;
 import com.android.systemui.screenshot.TakeScreenshotService;
 import com.android.systemui.qs.QSTile;
 
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 /** Quick settings tile: Screenshot **/
 public class ScreenshotTile extends QSTile<QSTile.BooleanState> {
@@ -87,7 +87,7 @@ public class ScreenshotTile extends QSTile<QSTile.BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.QUICK_SETTINGS;
+        return CMMetricsLogger.TILE_SCREENSHOT;
     }
 
     final Runnable mScreenshotTimeout = new Runnable() {
