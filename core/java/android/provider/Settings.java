@@ -3782,12 +3782,6 @@ public final class Settings {
         public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
 
         /**
-         * Change the delay when a screenshot is taken
-         * @hide
-         */
-        public static final String SCREENSHOT_DELAY = "screenshot_delay";
-
-        /**
          * Vibrate on pulsing while pickup
          * @hide
          */
